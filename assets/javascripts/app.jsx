@@ -3,8 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const ApiUtil = require('./util/api_util');
-const SearchPage = require('./search_page');
-
+const SearchPage = require('./components/search_page');
 window.ApiUtil = ApiUtil;
 
 const App = React.createClass({

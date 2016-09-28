@@ -3,7 +3,7 @@ import React from 'react';
 module.exports = React.createClass({
   render() {
     return(
-      <div>Welcome to the Muse!</div>
+      <div id='welcome'>Welcome to the Muse!</div>
     );
   }
 });
