@@ -1,7 +1,9 @@
+const Util = require('../util/util');
+
 module.exports = {
   fetchJobs(options, callback) {
     $.ajax({
-      url: "https://api-v2.themuse.com/jobs",
+      url: Util.formatRequest("https://api-v2.themuse.com/jobs", options),
       method: "GET",
       data: options,
       success(response) {

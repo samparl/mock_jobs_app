@@ -1,15 +1,32 @@
 import React from 'react';
-import CompanyInput from './company_input.jsx';
-import CategoryInput from './category_input.jsx';
+import Header from './header.jsx';
+import ParameterTextInput from './parameter_text_input.jsx';
+import ParameterCheckboxInput from './parameter_checkbox_input.jsx';
+import SearchButton from './search_button.jsx';
 import RequestStore from '../stores/request_store';
+import Categories from '../constants/job_categories';
+import JobLevels from '../constants/job_levels';
+import JobsIndex from './jobs_index';
 
 module.exports = React.createClass({
   render() {
     return(
-      <div>
-        <div id='welcome'>Welcome to the Muse!</div>
-        <CompanyInput />
-        <CategoryInput />
+      <div className="search-page">
+        <Header />
+        <ParameterTextInput
+          parameter="company" />
+        <ParameterTextInput
+          parameter="location" />
+        <ParameterCheckboxInput
+          parameter="level"
+          values={ JobLevels }
+          description="job levels" />
+        <ParameterCheckboxInput
+          parameter="category"
+          values={ Categories }
+          description="job categories" />
+        <SearchButton />
+        <JobsIndex />
       </div>
     );
   }

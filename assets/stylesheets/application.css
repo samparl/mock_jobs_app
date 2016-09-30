@@ -1,0 +1,232 @@
+/*CSS RESET*/
+
+html, body, header, div, h1, h2, h3, h4, form, ul, li, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #555459;
+  display: block;
+  background-color: inherit;
+  font-size: 1rem;
+  font-family: lato-regular, sans-serif;
+  text-decoration: inherit;
+  outline: none;
+  /*-webkit-appearance: none;*/
+}
+
+input:focus, button:active {
+  outline: none;
+}
+
+/*HEADER*/
+.header {
+  display: flex;
+  height: 4rem;
+  border-bottom: 1px solid #c0c0c0;
+  background: rgba(0, 0, 255, 0.5);
+}
+
+.header .title {
+  margin: auto;
+  font-size: 2rem;
+  background: rgba(0,0,0,0);
+}
+
+/*SEARCH PAGE*/
+.search-page {
+  display: flex;
+  flex-direction: column;
+}
+  .search-page .search-button {
+    font-size: 1.5rem;
+    margin: .5rem auto 2rem auto;
+    padding: .15rem 1rem;
+    border: 1px solid rgba(0, 0, 255, 0.6);
+    border-radius: .25rem;
+  }
+
+  .search-page .search-button:hover {
+    background-color: #c8c8c8;
+    cursor: pointer;
+  }
+
+  .search-page .section {
+    border: 1px solid #000;
+    border-radius: .25rem;
+    margin: auto;
+    margin-top: 1rem;
+    padding: .5rem 0;
+    width: 80%;
+  }
+
+  .search-page .section .vertical {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-page .section .horizontal {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search-page .section .input-description,
+  .search-page .section .field {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    flex: 1;
+  }
+
+  .search-page .section .field {
+    height: 2rem;
+  }
+
+  .search-page .section .input-description {
+    margin-bottom: .5rem;
+  }
+
+  .search-page .section .input-description .parameter {
+    background: rgba(255, 0, 0, 0.5);
+    padding-left: .1rem;
+    padding-right: .1rem;
+    border-radius: .25rem;
+  }
+
+    /*COMPANIES*/
+
+    .search-page .section .field.text-parameter {
+      border: 1px solid #c0c0c0;
+      border-radius: .25rem;
+    }
+
+    .search-page .section .field .element {
+      display: flex;
+      flex-direction: row;
+      margin: .1rem;
+      /*height: 2rem;*/
+    }
+
+      .search-page .section .field .element.text-parameter {
+        border: 1px solid #c0c0c0;
+        border-radius: .25rem;
+      }
+
+      .search-page .section .field .element.category {
+        flex: 1;
+        width: 50%;
+      }
+
+      .search-page .section .field .element > * {
+        padding: .15rem .2rem;
+      }
+
+    .search-page .section .field .input-list.text-parameter {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .search-page .section .field form {
+      display: flex;
+      flex: 1;
+    }
+
+    .search-page .section .field form input {
+      flex: 1;
+    }
+
+  .search-page .section .field.active {
+    border-color: #81b3ff;
+  }
+
+
+  /*CATEGORIES*/
+  .search-page .section .input-list.checkbox-parameter {
+    width: 90%;
+    margin: auto;
+  }
+
+  .search-page .section .field.checkbox-parameter {
+    float:left;
+    width: 50%;
+    min-width: 15rem;
+  }
+
+
+
+/*RESULTS PAGE*/
+
+.results-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-index {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+  border-radius: .25rem;
+  width: 80%;
+  margin: auto;
+}
+
+.page-index .page-number {
+  flex: 1;
+  text-align: center;
+  /*margin-top: 1rem;*/
+  padding: .5rem .5rem;
+}
+
+.page-index .page-number:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.page-index .page-number.selected {
+  font-weight: bolder;
+  font-size: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-index .page-number.selected:hover {
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  cursor: auto;
+}
+
+.results-index .result {
+  border: 1px solid #000;
+  border-radius: .25rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding: .5rem .5rem;
+  width: 80%;
+}
+
+.results-index .result .details {
+  display: none;
+}
+
+.results-index .result .details.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-index .result .details .detail-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.results-index .result .details .apply-link {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.25rem;
+  margin: .5rem auto;
+  padding: .25rem 1rem;
+  border: 1px solid rgba(0, 0, 255, 0.6);
+  border-radius: .25rem;
+}
+.results-index .result .details .apply-link:hover {
+  background-color: #c8c8c8;
+}
