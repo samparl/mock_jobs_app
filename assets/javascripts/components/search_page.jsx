@@ -26,7 +26,6 @@ module.exports = React.createClass({
           values={ Categories }
           description="job categories" />
         <SearchButton />
-        <JobsIndex />
       </div>
     );
   }

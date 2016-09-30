@@ -27,6 +27,10 @@ input:focus, button:active {
   background: rgba(0, 0, 255, 0.5);
 }
 
+.header:hover {
+  cursor: pointer;
+}
+
 .header .title {
   margin: auto;
   font-size: 2rem;
@@ -169,12 +173,12 @@ input:focus, button:active {
   border-radius: .25rem;
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .page-index .page-number {
   flex: 1;
   text-align: center;
-  /*margin-top: 1rem;*/
   padding: .5rem .5rem;
 }
 

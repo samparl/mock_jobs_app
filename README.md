@@ -7,7 +7,10 @@ The user is able to enter company names and locations in text format, and select
 
 In order to finalize a text input (e.g. the company name "Google"), the user must press enter in the input field. The input will then be presented in the field with an "x", which the user can click in order to remove that value from the query parameters.
 
-Results are fetched on a page by page basis, and users can navigate the pages by clicking through the pagination list at the top of the results index. If the results index
+#### Results Page
+Results are displayed on a results page, to which the user is directed upon submission of the search form. Results are fetched on a page by page basis, and users can navigate the pages by clicking through the pagination list at the top of the results index.
+
+The user can click on the header to return to the search page.
 
 N.B.: Text information must match the stored format backend (for example, "Boston, MA", not "Boston, Massachusetts"). Results will include remote opportunities as well as those local to the selected location.
 
@@ -25,5 +28,6 @@ component > action > dispatcher > store > component
 * Store: The store holds most of the data used in the applications presentation. For example, all job query results are held in the Results Store and fetched when appropriate by listening components. Components listening to the store generally set state when the store is updated, causing them to re-render.
 
 ### Installation
-Fork the repository to a local directory and, from your console in the directory:
-1. "npm install"
+1. Fork the repository to a local directory and, from your console in the directory, run "npm install" to install the package.json contents.
+
+2. Open the index.html top level file in your browser, and enjoy!
