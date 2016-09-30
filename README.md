@@ -28,6 +28,7 @@ component > action > dispatcher > store > component
 * Store: The store holds most of the data used in the applications presentation. For example, all job query results are held in the Results Store and fetched when appropriate by listening components. Components listening to the store generally set state when the store is updated, causing them to re-render.
 
 ### Installation
-1. Fork the repository to a local directory and, from your console in the directory, run "npm install" to install the package.json contents.
-
-2. Open the index.html top level file in your browser, and enjoy!
+1. Fork the repository to a local directory and, from your console in the directory
+2. Run "npm install" to install the package.json contents
+3. Run "webpack" to bundle the files into a usable format
+4. Open the index.html top level file in your browser, and enjoy!
